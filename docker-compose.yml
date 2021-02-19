@@ -1,0 +1,8 @@
+version: '3'
+services:
+  picom-builder:
+    build: .
+    working_dir: '/sync'
+    volumes:
+      - ./sync:/sync
+    tty: true
